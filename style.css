@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #1A2238;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+/* LOGO */
+
+.logo {
+    font-size: 32px;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* CHECKBOX */
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header {
+    height: 100vh;
+    background-color: #808080;
+    position: relative;
+}
+
+/* DRAG BOX */
+
+.pdfLogo{
+    width: 100px;
+}
+
+.zone {   
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: radial-gradient(ellipse at center,#EB6A5A 0,#c9402f 100%);
+    width:80%;
+    height:50%;  
+    border:5px dashed white;
+    text-align:center;
+    color: white;
+    z-index: 20;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.05),inset 0 0 .25em 0 rgba(0,0,0,.25);
+    padding: 30px;
+}
+.dragText{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+i {
+    text-align: center;
+    font-size: 10em;  
+    color:#fff;
+    margin-top: 50px;
+  }
+
+  .selectFile {
+    height: 50px;
+    margin: 20px auto;
+    position: relative;
+    width: 200px;          
+  }
+
+  label, input {
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 5px;          
+  }
+
+  label {
+    background: #fff;
+    color:#EB6A5A;
+    display: inline-block;
+    font-size: 1.2em;
+    line-height: 50px;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 400;   
+    box-shadow: 0 1px 1px gray;
+  }
+
+
+  input[type=file] {
+    opacity: 0;
+  }
+
+/* MEDIA QUERIES  */
+
+@media (max-width: 768px) {
+
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: rgb(40, 88, 88);
+        top: 75px;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

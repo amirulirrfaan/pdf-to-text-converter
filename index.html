@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <title>PDF to TXT Converter</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">PDF to TXT</div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="#">Convert</a></li>
+            <li><a href="#">Steps</a></li>
+            <li><a href="#">Group Members</a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="zone">
+        <div id="dropZ">
+          <img class="pdfLogo" src="images/pdfwhte.png" alt="" />
+          <p class="dragText">Drag and drop your file here</p>
+          <span>OR</span>
+          <div class="selectFile">
+            <label for="file">Select file</label>
+            <input type="file" name="files[]" id="file" />
+          </div>
+          <p>File size limit : 10 MB</p>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
